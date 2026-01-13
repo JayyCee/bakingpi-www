@@ -86,8 +86,22 @@ Makefile</pre>
 					ldr r0,=0x20200000
 				</p></div>
 				<div class="commandBox"><p>
-					<span class="armCodeInline">ldr reg,=val</span> puts the number <span class="armCodeInline">
-						val</span> into the register named <span class="armCodeInline">reg-2</span>.The number 0x20200000 is the physical address of the prepherial registers.</p></div>
+					<span class="armCodeInline">ldr
+						reg,=val</span> puts
+						the
+						number <span class="armCodeInline">
+						val</span> into the
+						register
+						named <span class="armCodeInline">reg</span>.The
+						number <span class="armCodeInline">0x20200000</span>
+						is the physical
+						address of the
+						prepherial registers,
+						according to Page 90
+						(Table 6-1 GPIO
+						Register Assignment),
+						BCM2835
+						Datasheet.</p></div>
 				<p>
 					That is our first command. It tells the processor to store the number 0x20200000
 					into the register r0. I shall need to answer two questions here, what is a register,
